@@ -1,0 +1,77 @@
+#intro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    /* margin: 20px 20px; */
+}
+
+#intro-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(5, 81, 81);
+}
+
+#card{
+    background: linear-gradient(45deg, rgb(153, 229, 229), rgb(1, 46, 46) );
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+    background-size: contain;
+    border-radius: 20px;
+    border: 2px solid rgb(219, 209, 209);
+    box-shadow: 1px 4px 4px 2px rgb(171, 168, 168);
+    margin-top: 20px;
+    flex: 1 0 calc(30% - 30px); /* Initial size, 33.33% with some spacing */
+    max-width: calc(30% - 20px);
+    overflow: hidden;
+}
+
+#card figure{
+    /* overflow: hidden; */
+}
+
+#content{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+#cars-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+/* #cars-info figure img{
+    width: 50%;
+} */
+
+#cars-info figure,#cars-info div {
+      flex: 1;
+      text-align: center;
+    }
+
+/* #content {
+    background: linear-gradient(45deg, rgb(153, 229, 229, 0.5), rgb(1, 46, 46, 0.5) );
+} */
+
+#cars-desc{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cars-info p{
+    font-size: medium;
+    margin-bottom: 50px;
+    color: rgb(4, 63, 63);
+    width: 70%;
+}

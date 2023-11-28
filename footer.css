@@ -1,0 +1,53 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(1, 91, 91, 0.9);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#Address,#About, #connect{
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#address-list, #about-list, #connect-list{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+#address-list li, #about-list li, #connect-list li{
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+    color: rgb(189, 211, 23);
+}
+
+#Address h2, #About h2, #connect h2{
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+    color: rgb(189, 211, 23);
+}
+
+#connect-list li a{
+    text-decoration: none;
+    color: rgb(189, 211, 23);
+    transition: font-size 0.3s ease-in-out ;
+}
+
+#connect-list li a:hover{
+    text-decoration: none;
+    color: rgba(18, 180, 180, 0.9);
+    font-size: large;
+}
+
+#connect-list li a:target{
+    text-decoration: none;
+    color: rgba(8, 140, 140, 0.9);
+    font-size: large;
+}

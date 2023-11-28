@@ -1,0 +1,223 @@
+body{
+    margin: 0px;
+    
+}
+
+
+/* navbar styles */
+nav{
+    display: block;
+    background: white;
+}
+
+#mobile-list-container{
+    display: none;
+}
+
+/* for desktop navbar */
+#desktop{
+    display: flex;
+    justify-content:space-between;
+}
+
+/* logo styling */
+#logo{
+    width: 200px;
+    height: 60px;
+}
+
+/* aligns list inside it */
+#desktop-list-container{
+    display: flex;
+    justify-content:space-between;
+    align-self: center;
+}
+
+/* aligning list items */
+#desktop-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* navbar list item styling */
+#desktop-list li{
+    margin-right: 100px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+/* navbar-link styles */
+.navbar-link{
+    text-decoration: none;
+    color: rgb(14, 143, 143);
+    transition: font-size 0.3s ease-in-out;
+}
+
+@keyframes underlineAnimation {
+    0% {
+      width: 50%;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 75%;
+    }
+    75% {
+        width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+/* hover styles on link */
+.navbar-link:hover{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(189, 211, 23);
+    border-bottom: 2px solid rgb(189, 211, 23);
+    animation: underlineAnimation 1s ease-in-out forwards alternate;
+    font-size: large;
+}
+/* clicked styles on link */
+.navbar-link:active{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(2, 139, 4);
+    border-bottom: 2px solid rgb(2, 139, 4);
+}
+
+/* login button styles */
+#desktop-list li button, #mobile-list li button, .more-btn{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(189, 211, 23);
+    border-style:none ;
+    box-shadow: -1px 2px 2px 1px rgb(210, 192, 192);
+    color: rgb(242, 239, 239);
+    font-weight: bolder;
+    transition: box-shadow 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+/* login button hover styles */
+#desktop-list li button:hover, #mobile-list li button:hover, .more-btn:hover{
+    background-color: rgb(14, 143, 143);
+    border-style:none ;
+    box-shadow: -5px 5px 3px 1px rgb(210, 192, 192);
+    width: 120px;
+    height: 50px;
+    font-size: medium;
+}
+
+/* login button clicking styles */
+#desktop-list li button:active, #mobile-list li button:active, .more-btn:active{
+    background-color: rgb(1, 91, 91);
+}
+
+@media screen and (max-width:992px) {
+    #desktop-list li{
+        margin-right: 60px;
+        font-weight: bold;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:832px) {
+    #desktop-list li{
+        margin-right: 40px;
+        font-weight: bold;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:752px) {
+    #desktop-list li{
+        margin-right: 30px;
+        font-weight: bold;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:720px) {
+    #desktop{
+        display: flex;
+        justify-content:space-between;
+    }
+    #desktop-list li{
+        margin-right: 30px;
+        font-weight: bold;
+        font-size: medium;
+    }
+    #desktop-list li button{
+        width: 80px;
+        height: 40px;
+    }
+    #desktop-list li button:hover{
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:692px) {
+    #desktop-list-container{
+        display: none;
+    }
+    #mobile-list-container{
+        display: flex;
+        justify-content:space-evenly;
+        align-self: center;
+        /* margin-right: 10px; */
+    }
+    #mobile-list{
+        display: none;
+    }
+    #bar-icon{
+        margin-right: 30px;
+    }
+    #bar-icon a:target{
+        display: none !important;
+        margin: 0px;
+        /* background: none; */
+    }
+    #mobile-list:target{
+        display: flex;
+        /* background: none; */
+    }
+    #bar-icon a:active{
+        display: none;
+    }
+    #mobile-list{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items:center;
+        width: 200px;
+        height: 300px;
+        margin-right: 10px;
+        background-color: rgb(1, 91, 91, 0.8);
+        list-style: none;
+        padding: 0px;
+        z-index: 1;
+    }
+    #mobile-list li{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #mobile-list li a{
+        color: white;
+    }
+    .navbar-link:hover{
+        color: rgb(226, 255, 7) !important;
+    }
+    #mobile-list li button{
+        box-shadow: 2px 2px 1px 1px rgb(1, 91, 91, 0.8);
+        border: none !important;
+    }
+    #mobile-list li button:hover{
+        box-shadow: 4px 4px 3px 1px rgb(1, 91, 91, 0.8);
+        border: none !important;
+    }
+}
