@@ -34,3 +34,67 @@
     z-index: 1;
     
 }
+
+@media screen and (max-width:1364px) {
+    #hero{
+        background: linear-gradient(45deg, rgba(23, 20, 20, 0.8), rgb(6, 19, 6, 0.9) 70%);
+        width:100%;
+        height: 680px;
+        border-radius: 10px;
+        margin: 0px;
+        /* transition: overflow 0.3 ease-in-out; */
+    }
+}
+
+@media screen and (max-width:1270px) {
+    #hero{
+        background: linear-gradient(45deg, rgba(23, 20, 20, 0.8), rgb(6, 19, 6, 0.9) 70%);
+        width:100%;
+        height: 600px;
+        border-radius: 10px;
+        margin: 0px;
+        /* transition: overflow 0.3 ease-in-out; */
+    }
+}
+
+@media screen and (max-width:1240px) {
+    #hero{
+        background: linear-gradient(45deg, rgba(23, 20, 20, 0.8), rgb(6, 19, 6, 0.9) 70%);
+        width:100%;
+        height: 570px;
+        border-radius: 10px;
+        margin: 0px;
+        /* transition: overflow 0.3 ease-in-out; */
+    }
+}
+
+@media screen and (max-width:420px) {
+    #hero{
+        background: linear-gradient(45deg, rgba(23, 20, 20, 0.8), rgb(6, 19, 6, 0.9) 70%);
+        width:100%;
+        height: 300px;
+        border-radius: 10px;
+        margin: 0px;
+        /* transitio
+        
+        n: overflow 0.3 ease-in-out; */
+    }
+
+    @keyframes drive {
+        0%{
+            transform: translate(50%,-50%);
+            /* overflow: hidden; */
+        }
+        100%{
+            transform: translateY(110%);
+        }
+    }
+    #hero figure img{
+        width: 100%;
+        overflow: hidden;
+        transform: translateY(110%);
+        animation: drive 2s ease-in-out alternate;
+        z-index: 1;
+        
+    }
+}
