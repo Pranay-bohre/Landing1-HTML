@@ -231,26 +231,22 @@ form{
     }
 }
 
-@media screen and (max-width:660px) {
+@media screen and (max-width:480px) {
     #contact{
         flex-wrap: wrap;
         flex-direction: column;
         /* translate: ; */
     }
-}
-
-@media screen and (max-width:500px) {
-    #contact{
-        flex-wrap: wrap;
-        flex-direction: column;
-        /* translate: ; */
+    #contact-container{
+        width: 60vw;
     }
-}
-
-@media screen and (max-width:400px) {
-    #contact{
-        flex-wrap: wrap;
-        flex-direction: column;
-        /* translate: ; */
+    .contact-image { 
+        background-size: cover;
+        width: 300px !important; 
+        height: 200px !important;
+    }
+    .contact-image img{ 
+        width: 300px !important; 
+        height: 200px !important;
     }
 }
